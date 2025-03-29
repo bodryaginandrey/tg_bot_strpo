@@ -10,6 +10,6 @@ async def cmd_start(message: types.Message):
     await message.answer(f"Привет, {message.from_user.username}!")
 
 
-@dp.message()
+@dp.message() 
 async def echo(message: types.Message):
     await message.answer(message.text)
